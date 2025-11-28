@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Golden Touch Health Centre - Your Path to Natural Healing, Recovery and Wellness. Experience certified care, natural therapies, and personalized healing.">
+    <meta name="keywords" content="health centre, natural healing, wellness, therapy, recovery">
+    <meta name="author" content="Golden Touch Health Centre">
+    <title>Golden Touch Health Centre - Natural Healing & Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+        }
+        
+        .gradient-primary-hover:hover {
+            background: linear-gradient(135deg, #4A3BEE 0%, #00D99A 100%);
+        }
+        
+        .bg-soft-lavender {
+            background-color: #EEF0FF;
+        }
+        
+        .text-primary {
+            color: #5B4BFF;
+        }
+        
+        .text-accent {
+            color: #00E5A8;
+        }
+        
+        .border-primary {
+            border-color: #5B4BFF;
+        }
+        
+        .hover-lift {
+            transition: all 300ms ease-out;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(91, 75, 255, 0.15);
+        }
+        
+        .smooth-transition {
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-answer {
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
+                    <i class="fas fa-leaf text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-semibold text-primary">Golden Touch</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 font-medium hover:text-primary smooth-transition">Features</a>
+                <a href="#benefits" class="text-gray-700 font-medium hover:text-primary smooth-transition">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 font-medium hover:text-primary smooth-transition">Testimonials</a>
+                <a href="#faq" class="text-gray-700 font-medium hover:text-primary smooth-transition">FAQ</a>
+                <a href="https://goldentouchmu.com" class="gradient-primary text-white px-6 py-2 rounded-full font-medium hover:shadow-lg smooth-transition hover:scale-105">Book Now</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden p-2 rounded-lg hover:bg-gray-100 smooth-transition">
+                <i class="fas fa-bars text-primary text-2xl"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-4 py-4 space-y-4">
+                <a href="#features" class="block text-gray-700 font-medium hover:text-primary smooth-transition py-2">Features</a>
+                <a href="#benefits" class="block text-gray-700 font-medium hover:text-primary smooth-transition py-2">Benefits</a>
+                <a href="#testimonials" class="block text-gray-700 font-medium hover:text-primary smooth-transition py-2">Testimonials</a>
+                <a href="#faq" class="block text-gray-700 font-medium hover:text-primary smooth-transition py-2">FAQ</a>
+                <a href="https://goldentouchmu.com" class="block gradient-primary text-white px-6 py-3 rounded-full font-medium text-center hover:shadow-lg smooth-transition">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 md:py-32 lg:py-40 overflow-hidden">
+        <!-- Decorative Background Elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-soft-lavender rounded-full opacity-40 -mr-48 -mt-48"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-soft-lavender rounded-full opacity-30 -ml-36 -mb-36"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="fade-in">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold text-primary leading-tight mb-6">
+                        Golden Touch Health Centre
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-700 font-light leading-relaxed mb-8">
+                        Your Path to Natural Healing, Recovery and Wellness
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-10 max-w-xl">
+                        Experience transformative healing through our certified care, natural therapies, and personalized wellness programs designed specifically for your unique health journey.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://goldentouchmu.com" class="gradient-primary text-white px-8 py-4 rounded-full font-semibold text-center hover:shadow-xl smooth-transition hover:scale-105 flex items-center justify-center space-x-2">
+                            <span>Book Your Appointment</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#features" class="border-2 border-primary text-primary px-8 py-4 rounded-full font-semibold text-center hover:bg-soft-lavender smooth-transition">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Illustration Area -->
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="relative w-full h-96">
+                        <div class="absolute inset-0 bg-gradient-to-br from-primary to-accent opacity-10 rounded-3xl"></div>
+                        <div class="absolute inset-8 flex items-center justify-center">
+                            <div class="text-center">
+                                <i data-lucide="heart" class="w-32 h-32 text-primary mx-auto mb-4 opacity-80"></i>
+                                <p class="text-primary font-semibold text-lg">Natural Healing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-soft-lavender">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-semibold text-primary mb-4">Our Core Features</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Discover what sets Golden Touch Health Centre apart in delivering exceptional wellness care</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Certified Care -->
+                <div class="bg-white rounded-2xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Certified Care</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Our team consists of highly trained and certified healthcare professionals with extensive experience in natural healing practices. Each practitioner maintains current certifications and continuously updates their knowledge to provide you with the highest standard of care.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                            <span>Professionally qualified practitioners</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                            <span>Ongoing professional development</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                            <span>Adherence to best practices</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Natural Therapies -->
+                <div class="bg-white rounded-2xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="leaf" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Natural Therapies</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        We harness the power of nature's healing remedies through a comprehensive range of evidence-based natural therapies. From herbal treatments to holistic wellness practices, our approach works in harmony with your body's natural healing systems.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                            <span>Herbal and botanical treatments</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                            <span>Holistic wellness practices</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                            <span>Scientifically validated methods</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Personalized Healing -->
+                <div class="bg-white rounded-2xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="user-check" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Personalized Healing</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Every individual is unique, which is why we create customized treatment plans tailored to your specific health goals, medical history, and lifestyle. Your personalized approach ensures optimal results and long-term wellness success.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                            <span>Customized treatment plans</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                            <span>Individual health assessments</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i data-lucide="check" class="w-4 h-4 text-accent"></i>
+                            <span>Ongoing progress monitoring</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-semibold text-primary mb-4">Transform Your Wellness Journey</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Experience the profound benefits of natural healing and personalized care</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Benefit 1: Pain Relief -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-xl bg-gradient-to-br from-primary to-accent">
+                            <i data-lucide="activity" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-primary mb-3">Effective Pain Relief</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Experience significant pain reduction through our natural therapeutic approaches. Whether you're dealing with chronic pain, muscle tension, or post-injury discomfort, our holistic methods target the root cause rather than just masking symptoms.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-600">
+                            <p class="flex items-center space-x-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent"></i>
+                                <span>Non-invasive treatment approaches</span>
+                            </p>
+                            <p class="flex items-center space-x-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent"></i>
+                                <span>Long-lasting relief without side effects</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Reduced Stress -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-xl bg-gradient-to-br from-primary to-accent">
+                            <i data-lucide="brain" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-primary mb-3">Stress Reduction & Mental Clarity</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Our wellness programs are designed to calm your mind and rejuvenate your spirit. Through stress-reducing therapies and mindfulness practices, you'll experience improved mental clarity, better sleep quality, and enhanced emotional balance.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-600">
+                            <p class="flex items-center space-x-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent"></i>
+                                <span>Reduced anxiety and tension</span>
+                            </p>
+                            <p class="flex items-center space-x-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent"></i>
+                                <span>Improved sleep and relaxation</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Overall Wellbeing -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-xl bg-gradient-to-br from-primary to-accent">
+                            <i data-lucide="heart-handshake" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-primary mb-3">Improved Overall Wellbeing</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Achieve holistic wellness that encompasses physical, mental, and emotional health. Our comprehensive approach helps you build a stronger immune system, increase energy levels, and develop sustainable healthy lifestyle habits.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-600">
+                            <p class="flex items-center space-x-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent"></i>
+                                <span>Enhanced vitality and energy</span>
+                            </p>
+                            <p class="flex items-center space-x-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent"></i>
+                                <span>Stronger immune function</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 4: Holistic Recovery -->
+                <div class="flex gap-8">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-xl bg-gradient-to-br from-primary to-accent">
+                            <i data-lucide="trending-up" class="w-8 h-8 text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-primary mb-3">Accelerated Recovery & Healing</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Support your body's natural healing processes with our evidence-based recovery protocols. Whether recovering from injury or illness, our therapies promote faster healing, restore mobility, and help you regain your quality of life.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-600">
+                            <p class="flex items-center space-x-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent"></i>
+                                <span>Faster tissue repair and regeneration</span>
+                            </p>
+                            <p class="flex items-center space-x-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent"></i>
+                                <span>Restored mobility and function</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-16 md:py-24 bg-soft-lavender">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-semibold text-primary mb-4">About Golden Touch Health Centre</h2>
+            </div>
+
+            <div class="space-y-8">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Founded with a vision to revolutionize wellness care, Golden Touch Health Centre emerged from the passion of experienced healthcare professionals who believed in the transformative power of natural healing. Our journey began over a decade ago when our founders recognized a growing need for authentic, personalized healthcare that honors both ancient wisdom and modern scientific understanding. What started as a small clinic has blossomed into a trusted wellness destination, serving thousands of patients seeking genuine healing and lasting health transformation. Our commitment to excellence and patient-centered care has made us a beacon of hope for those searching for alternatives to conventional medicine.
+                </p>
+
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    At Golden Touch Health Centre, our core mission is to empower individuals to take control of their health through natural, evidence-based therapies and personalized wellness programs. We are deeply committed to creating a supportive healing environment where every patient feels valued, heard, and cared for. Our values of integrity, compassion, and continuous learning guide every aspect of our practice. We believe that true wellness extends beyond treating symptoms—it's about addressing the root causes of illness and fostering sustainable lifestyle changes. Through our holistic approach, we strive to help each person achieve optimal health, renewed vitality, and a profound sense of wellbeing that enriches their entire life.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-semibold text-primary mb-4">What Our Clients Say</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Real stories from real people who have experienced transformation through our natural healing programs</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-soft-lavender rounded-2xl p-8 hover-lift">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-semibold text-primary">Sarah Mitchell</h4>
+                            <p class="text-sm text-gray-600">Marketing Manager</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "I came to Golden Touch with chronic back pain that had plagued me for years. After just six weeks of personalized treatment, I experienced remarkable relief. The practitioners are incredibly knowledgeable and truly care about your wellbeing. I've regained my quality of life and can now enjoy activities I thought were behind me. Highly recommended!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-soft-lavender rounded-2xl p-8 hover-lift">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-semibold text-primary">James Chen</h4>
+                            <p class="text-sm text-gray-600">Business Owner</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "The stress management program at Golden Touch has been transformative. I was running on empty, constantly anxious, and unable to sleep properly. Their holistic approach helped me find balance and peace. My productivity at work has actually improved, and I feel genuinely happy again. The staff is professional and welcoming."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-soft-lavender rounded-2xl p-8 hover-lift">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-semibold text-primary">Elena Rodriguez</h4>
+                            <p class="text-sm text-gray-600">Fitness Instructor</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "After a sports injury, I was determined to recover naturally. Golden Touch's recovery program exceeded all my expectations. The practitioners used cutting-edge natural therapies combined with personalized guidance. I'm back to full fitness and stronger than before. Their expertise in sports recovery is unparalleled."
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-soft-lavender rounded-2xl p-8 hover-lift">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-xl font-semibold text-primary">Michael Thompson</h4>
+                            <p class="text-sm text-gray-600">Retired Professional</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                        <i class="fas fa-star text-accent text-sm"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "At 62, I thought my health challenges were just part of aging. Golden Touch proved me wrong. Their comprehensive wellness program has given me more energy than I've had in decades. I sleep better, my arthritis is manageable, and I feel genuinely vibrant. Best investment in my health I've ever made!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-soft-lavender">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-semibold text-primary mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600">Find answers to common questions about our services and approach</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-soft-lavender smooth-transition cursor-pointer">
+                        <span class="text-lg font-semibold text-primary text-left">What makes Golden Touch's approach different from conventional medicine?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-primary flex-shrink-0 smooth-transition"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 smooth-transition">
+                        <p class="text-gray-700 leading-relaxed">
+                            Golden Touch combines the wisdom of traditional healing practices with modern scientific research. Rather than simply treating symptoms, we focus on identifying and addressing the root causes of health issues. Our practitioners take time to understand your complete health picture, lifestyle, and goals, creating truly personalized treatment plans. We emphasize preventive care and empowering you with knowledge about your own health, enabling you to make informed decisions about your wellness journey.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-soft-lavender smooth-transition cursor-pointer">
+                        <span class="text-lg font-semibold text-primary text-left">Are your therapies safe and do they have any side effects?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-primary flex-shrink-0 smooth-transition"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 smooth-transition">
+                        <p class="text-gray-700 leading-relaxed">
+                            Yes, our natural therapies are designed to be safe with minimal to no side effects. All treatments are evidence-based and carefully selected based on extensive research. Our practitioners conduct thorough health assessments before treatment to identify any potential contraindications. We use only high-quality, tested natural ingredients and follow strict safety protocols. However, it's important to note that while natural therapies are generally very safe, some individuals may experience mild temporary reactions as their body begins the healing process. We always discuss any concerns with you beforehand and monitor your progress closely.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-soft-lavender smooth-transition cursor-pointer">
+                        <span class="text-lg font-semibold text-primary text-left">How long does it typically take to see results from treatment?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-primary flex-shrink-0 smooth-transition"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 smooth-transition">
+                        <p class="text-gray-700 leading-relaxed">
+                            The timeline for results varies depending on your individual health situation, the nature of your condition, and how your body responds to treatment. Some people experience noticeable improvements within the first week or two, while others may require several weeks to a few months for significant changes. Chronic conditions that have developed over years typically require more time to resolve than acute issues. We believe in sustainable, lasting healing rather than quick fixes. During your initial consultation, our practitioners will provide you with realistic expectations based on your specific situation and create a timeline that helps you track your progress and stay motivated throughout your healing journey.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-soft-lavender smooth-transition cursor-pointer">
+                        <span class="text-lg font-semibold text-primary text-left">Can I continue taking my current medications while receiving treatment?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-primary flex-shrink-0 smooth-transition"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 smooth-transition">
+                        <p class="text-gray-700 leading-relaxed">
+                            In most cases, yes. Our natural therapies are designed to complement conventional medications and work alongside them. However, it's crucial that you inform our practitioners about all medications and supplements you're currently taking during your initial consultation. Some natural treatments may interact with certain medications, so our team will review your complete medical profile to ensure safety. We may recommend adjustments to your treatment plan based on your medications. We also work collaboratively with your primary care physician and encourage open communication between all your healthcare providers. Never stop or change your medications without consulting your doctor first.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 flex items-center justify-between hover:bg-soft-lavender smooth-transition cursor-pointer">
+                        <span class="text-lg font-semibold text-primary text-left">What should I expect during my first appointment?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-6 h-6 text-primary flex-shrink-0 smooth-transition"></i>
+                    </button>
+                    <div class="faq-answer hidden px-8 pb-6 smooth-transition">
+                        <p class="text-gray-700 leading-relaxed">
+                            Your first appointment is comprehensive and designed to give us a complete understanding of your health. You can expect a detailed consultation where our practitioner will ask about your medical history, current health concerns, lifestyle, diet, stress levels, and wellness goals. We'll perform a thorough physical assessment and may recommend specific diagnostic tests if needed. This information helps us create a personalized treatment plan tailored specifically to you. The appointment typically lasts 60-90 minutes, and you'll leave with clear understanding of your condition, the recommended treatment approach, and realistic expectations for your healing journey. We encourage you to ask questions and share any concerns during this visit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section class="relative py-20 md:py-32 overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&h=600&fit=crop'); background-size: cover; background-position: center;">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-semibold text-white mb-6 leading-tight">
+                Begin Your Healing Journey Today
+            </h2>
+            <p class="text-xl text-gray-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Take the first step towards lasting wellness and natural healing. Our team is ready to support you on your path to optimal health and vitality.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://goldentouchmu.com" class="gradient-primary text-white px-8 py-4 rounded-full font-semibold text-center hover:shadow-xl smooth-transition hover:scale-105 flex items-center justify-center space-x-2">
+                    <span>Schedule Your Appointment</span>
+                    <i class="fas fa-calendar-check"></i>
+                </a>
+                <a href="mailto:info@goldentouchmu.com" class="bg-white text-primary px-8 py-4 rounded-full font-semibold text-center hover:shadow-xl smooth-transition hover:scale-105 flex items-center justify-center space-x-2">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
+                            <i class="fas fa-leaf text-white"></i>
+                        </div>
+                        <span class="text-xl font-semibold text-white">Golden Touch</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Dedicated to natural healing, recovery, and wellness. Your path to optimal health starts here.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-accent smooth-transition">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-accent smooth-transition">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-accent smooth-transition">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-accent smooth-transition">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-accent smooth-transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-accent smooth-transition">Terms of Service</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-accent smooth-transition">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-envelope text-accent mt-1 flex-shrink-0"></i>
+                            <a href="mailto:info@goldentouchmu.com" class="text-gray-400 hover:text-accent smooth-transition break-all">info@goldentouchmu.com</a>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-globe text-accent mt-1 flex-shrink-0"></i>
+                            <a href="https://goldentouchmu.com" class="text-gray-400 hover:text-accent smooth-transition">Visit Website</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <!-- Copyright -->
+                    <p class="text-sm text-gray-400">
+                        &copy; 2025 Golden Touch Health Centre. All rights reserved. Natural healing for a healthier you.
+                    </p>
+
+                    <!-- Social Media -->
+                    <div class="flex items-center justify-start md:justify-end space-x-6">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-accent hover:bg-primary smooth-transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-accent hover:bg-primary smooth-transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-accent hover:bg-primary smooth-transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-accent hover:bg-primary smooth-transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
