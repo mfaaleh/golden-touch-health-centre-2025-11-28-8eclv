@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Golden Touch Health Centre Blog - Natural Healing, Wellness Tips, Recovery Techniques, and Health Insights. Discover evidence-based articles on holistic wellness.">
+    <meta name="keywords" content="health blog, natural healing, wellness tips, recovery techniques, holistic health, therapy insights">
+    <meta name="author" content="Golden Touch Health Centre">
+    <title>Blog - Golden Touch Health Centre | Natural Healing & Wellness Articles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+        }
+        
+        .gradient-primary-hover:hover {
+            background: linear-gradient(135deg, #4A3BEE 0%, #00D99A 100%);
+        }
+        
+        .bg-soft-lavender {
+            background-color: #EEF0FF;
+        }
+        
+        .text-primary {
+            color: #5B4BFF;
+        }
+        
+        .text-accent {
+            color: #00E5A8;
+        }
+        
+        .border-primary {
+            border-color: #5B4BFF;
+        }
+        
+        .hover-lift {
+            transition: all 300ms ease-out;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(91, 75, 255, 0.15);
+        }
+        
+        .smooth-transition {
+            transition: all 300ms ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .blog-excerpt {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="https://mfaaleh.github.io/golden-touch-health-centre-2025-11-28-8eclv" class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
+                    <i class="fas fa-leaf text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-semibold text-primary">Golden Touch</span>
+            </a>
+
+            <!-- Back Button -->
+            <div class="flex items-center">
+                <a href="https://mfaaleh.github.io/golden-touch-health-centre-2025-11-28-8eclv" class="text-gray-700 font-medium hover:text-primary smooth-transition flex items-center space-x-2">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="relative py-16 md:py-24 lg:py-32 overflow-hidden">
+        <!-- Decorative Background Elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-soft-lavender rounded-full opacity-40 -mr-48 -mt-48"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-soft-lavender rounded-full opacity-30 -ml-36 -mb-36"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center fade-in">
+                <h1 class="text-5xl md:text-6xl lg:text-6xl font-semibold text-primary leading-tight mb-6">
+                    Our Blog
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 font-light leading-relaxed mb-8 max-w-3xl mx-auto">
+                    Insights, Tips, and Evidence-Based Guidance for Your Natural Healing Journey
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                    Discover expert articles on natural healing techniques, wellness practices, recovery strategies, and holistic health insights. Our blog is dedicated to empowering you with knowledge to support your path to optimal health and vitality.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-semibold text-primary mb-2">Latest Article</h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full"></div>
+            </div>
+
+            <!-- Featured Post Card -->
+            <div class="bg-white rounded-2xl overflow-hidden hover-lift border border-gray-100">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8 md:p-12">
+                    <!-- Content -->
+                    <div class="lg:col-span-2">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <span class="inline-block bg-soft-lavender text-primary px-4 py-2 rounded-full text-sm font-semibold">Featured</span>
+                            <span class="text-sm text-gray-500 flex items-center space-x-2">
+                                <i class="far fa-calendar"></i>
+                                <span>November 28, 2025</span>
+                            </span>
+                        </div>
+                        
+                        <h3 class="text-3xl md:text-4xl font-semibold text-primary mb-6 leading-tight">
+                            Natural Healing Techniques for Chronic Pain Relief
+                        </h3>
+                        
+                        <p class="text-gray-700 leading-relaxed mb-6 blog-excerpt">
+                            Chronic pain affects millions worldwide, but natural healing offers transformative relief beyond medication. This comprehensive guide explores evidence-based techniques that address pain's root causes rather than masking symptoms. Discover herbal remedies like turmeric and ginger, therapeutic massage, acupuncture, and movement therapies that activate your body's innate healing capacity. Mind-body practices including meditation and mindfulness reset your nervous system, while anti-inflammatory nutrition supports recovery. A personalized approach combining multiple modalities creates lasting results. Unlike pharmaceutical interventions, natural healing empowers you as an active participant in recovery, delivering cumulative benefits including improved sleep, reduced stress, and enhanced vitality. Reclaim your life today.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                            <a href="https://mfaaleh.github.io/golden-touch-health-centre-2025-11-28-8eclv/blog/natural-healing-techniques-for-chronic-pain-relief.html" class="gradient-primary text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg smooth-transition hover:scale-105 flex items-center justify-center space-x-2 w-full sm:w-auto">
+                                <span>Read Full Article</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="flex items-center space-x-4 text-gray-600">
+                                <span class="flex items-center space-x-2">
+                                    <i class="far fa-clock"></i>
+                                    <span class="text-sm">8 min read</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Image Placeholder -->
+                    <div class="lg:col-span-1 flex items-center justify-center">
+                        <div class="w-full h-64 lg:h-full bg-gradient-to-br from-primary to-accent opacity-10 rounded-2xl flex items-center justify-center">
+                            <div class="text-center">
+                                <i data-lucide="book-open" class="w-24 h-24 text-primary mx-auto mb-4 opacity-60"></i>
+                                <p class="text-primary font-semibold text-sm">Featured Article</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories & Coming Soon Section -->
+    <section class="py-16 md:py-24 bg-soft-lavender">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-semibold text-primary mb-2">Explore by Category</h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Category 1: Natural Therapies -->
+                <div class="bg-white rounded-2xl p-8 hover-lift cursor-pointer">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="leaf" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">Natural Therapies</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Discover the power of herbal remedies, botanical treatments, and traditional healing practices backed by modern science.
+                    </p>
+                    <div class="text-sm text-primary font-semibold flex items-center space-x-2">
+                        <span>Coming Soon</span>
+                        <i class="fas fa-hourglass-end"></i>
+                    </div>
+                </div>
+
+                <!-- Category 2: Wellness & Prevention -->
+                <div class="bg-white rounded-2xl p-8 hover-lift cursor-pointer">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="heart" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">Wellness & Prevention</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Learn proactive strategies for maintaining optimal health and preventing illness through holistic lifestyle practices.
+                    </p>
+                    <div class="text-sm text-primary font-semibold flex items-center space-x-2">
+                        <span>Coming Soon</span>
+                        <i class="fas fa-hourglass-end"></i>
+                    </div>
+                </div>
+
+                <!-- Category 3: Recovery & Rehabilitation -->
+                <div class="bg-white rounded-2xl p-8 hover-lift cursor-pointer">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">Recovery & Rehabilitation</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Explore evidence-based recovery techniques and rehabilitation strategies for injury and illness recovery.
+                    </p>
+                    <div class="text-sm text-primary font-semibold flex items-center space-x-2">
+                        <span>Coming Soon</span>
+                        <i class="fas fa-hourglass-end"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Articles Coming Section -->
+            <div class="bg-white rounded-2xl p-12 text-center">
+                <i data-lucide="inbox" class="w-16 h-16 text-primary mx-auto mb-6 opacity-40"></i>
+                <h3 class="text-2xl font-semibold text-primary mb-4">More Articles Coming Soon</h3>
+                <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
+                    We're constantly creating new, in-depth articles on natural healing, wellness practices, and recovery techniques. Check back regularly for fresh insights and expert guidance on your health journey.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="mailto:info@goldentouchmu.com?subject=Blog%20Subscription" class="gradient-primary text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg smooth-transition hover:scale-105 flex items-center justify-center space-x-2">
+                        <span>Subscribe for Updates</span>
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <a href="https://mfaaleh.github.io/golden-touch-health-centre-2025-11-28-8eclv" class="border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-soft-lavender smooth-transition flex items-center justify-center space-x-2">
+                        <span>Back to Home</span>
+                        <i class="fas fa-home"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-semibold text-primary mb-4">About This Blog</h2>
+            </div>
+
+            <div class="space-y-8">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    The Golden Touch Health Centre Blog is your trusted resource for evidence-based information on natural healing, holistic wellness, and recovery techniques. Our mission is to educate, inspire, and empower you on your journey toward optimal health and vitality. Each article is carefully researched and written by our experienced practitioners to provide you with actionable insights and practical guidance.
+                </p>
+
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    In this blog, you'll discover comprehensive guides on natural therapies, wellness practices, pain management, stress reduction, recovery strategies, and preventive health measures. We explore the science behind healing modalities, share client success stories, provide lifestyle recommendations, and offer expert tips to support your personal health journey. Whether you're seeking relief from chronic conditions, looking to enhance your overall wellbeing, or interested in learning more about natural healing approaches, our blog offers valuable, scientifically-backed information to guide your decisions.
+                </p>
+
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    We believe that knowledge is power in healthcare. By sharing our expertise and insights, we aim to help you make informed choices about your health, understand the benefits of natural therapies, and take an active role in your healing process. Our commitment to providing quality content means you can trust the information you find here to be accurate, current, and relevant to your wellness goals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section class="relative py-20 md:py-32 overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&h=600&fit=crop'); background-size: cover; background-position: center;">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-semibold text-white mb-6 leading-tight">
+                Ready to Begin Your Healing Journey?
+            </h2>
+            <p class="text-xl text-gray-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Apply the insights from our blog with personalized care from our certified practitioners. Schedule your appointment today and take the first step toward lasting wellness.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://goldentouchmu.com" class="gradient-primary text-white px-8 py-4 rounded-full font-semibold text-center hover:shadow-xl smooth-transition hover:scale-105 flex items-center justify-center space-x-2">
+                    <span>Schedule Your Appointment</span>
+                    <i class="fas fa-calendar-check"></i>
+                </a>
+                <a href="https://mfaaleh.github.io/golden-touch-health-centre-2025-11-28-8eclv" class="bg-white text-primary px-8 py-4 rounded-full font-semibold text-center hover:shadow-xl smooth-transition hover:scale-105 flex items-center justify-center space-x-2">
+                    <span>Learn More</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
+                            <i class="fas fa-leaf text-white"></i>
+                        </div>
+                        <span class="text-xl font-semibold text-white">Golden Touch</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Dedicated to natural healing, recovery, and wellness. Your path to optimal health starts here.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://mfaaleh.github.io/golden-touch-health-centre-2025-11-28-8eclv#features" class="text-gray-400 hover:text-accent smooth-transition">Features</a></li>
+                        <li><a href="https://mfaaleh.github.io/golden-touch-health-centre-2025-11-28-8eclv#benefits" class="text-gray-400 hover:text-accent smooth-transition">Benefits</a></li>
+                        <li><a href="https://mfaaleh.github.io/golden-touch-health-centre-2025-11-28-8eclv#testimonials" class="text-gray-400 hover:text-accent smooth-transition">Testimonials</a></li>
+                        <li><a href="https://mfaaleh.github.io/golden-touch-health-centre-2025-11-28-8eclv#faq" class="text-gray-400 hover:text-accent smooth-transition">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-accent smooth-transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-accent smooth-transition">Terms of Service</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-accent smooth-transition">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-envelope text-accent mt-1 flex-shrink-0"></i>
+                            <a href="mailto:info@goldentouchmu.com" class="text-gray-400 hover:text-accent smooth-transition break-all">info@goldentouchmu.com</a>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-globe text-accent mt-1 flex-shrink-0"></i>
+                            <a href="https://goldentouchmu.com" class="text-gray-400 hover:text-accent smooth-transition">Visit Website</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <!-- Copyright -->
+                    <p class="text-sm text-gray-400">
+                        &copy; 2025 Golden Touch Health Centre. All rights reserved. Natural healing for a healthier you.
+                    </p>
+
+                    <!-- Social Media -->
+                    <div class="flex items-center justify-start md:justify-end space-x-6">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-accent hover:bg-primary smooth-transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-accent hover:bg-primary smooth-transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-accent hover:bg-primary smooth-transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-accent hover:bg-primary smooth-transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
